@@ -1,0 +1,14 @@
+version : "3"
+services:
+  myapp1:
+    image: myapp
+    volumes:
+      - ./:/home/app
+  myapp2:
+    image: myapp
+    volumes:
+      - ./:/home/app
+volumes:
+  disk:
+    driver:
+      local 
